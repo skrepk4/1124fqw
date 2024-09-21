@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <form id="form">
+        <label class="field1">Поле 1:</label>
+        <input type="text" id="field1" name="field1">
+
+        <label class="field2">Поле 2:</label>
+        <input type="text" id="field2" name="field2">
+
+        <button type="button" onclick="checkFields()">Перевірити</button>
+    </form>
+
+    <p id="message1"></p>
+
+
+    <form id="numberForm">
+        <label>Число 1:<input type="number" id="num1"></label><br>
+        <label>Число 2:<input type="number" id="num2"></label><br>
+        <button type="button" onclick="checkNum()">Перевірити</button>
+    </form>
+    <p id="message2"></p>
+
+
+    <form id="textForm">
+        <label>Введіть текст:<input type="text" id="textField"></label><br>
+        <button type="button" onclick="checkText()">Перевірити</button>
+    </form>
+    <p id="message3"></p>
+
+
+    <form id="numberForm">
+        <label>Введіть число:<input type="number" id="numberInput"></label><br>
+        <button type="button" onclick="checkInput()">Перевірити</button>
+    </form>
+    <p id="message4"></p>
+
+
+    <form id="dataForm"></form>
+        <label>Ім'я:<input type="text" id="name" required></label>
+        <label>Email:<input type="email" id="email" required></label>
+        <label>Пароль:<input type="password" id="password" required></label>
+        <br><br>
+        <button type="button" onclick="validateForm()">Відправити</button>
+    </form>
+    <p id="message5"></p>
+</body>
+</html>
